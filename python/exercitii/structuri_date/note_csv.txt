@@ -1,0 +1,21 @@
+Nume Prenume,         Romana,Matematica,Istorie,Geografie,Biologie,Informatica,Tic,Engleza,Franceza,Spaniola
+Ionescu Ion,            10,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Popescu Petre,           9,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Georgescu George,        8,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Popescu Petre,           7,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Ionescu Mihai,          10,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Popescu Andrei,          9,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Georgescu Octavian,      8,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Popescu Bogdan,          7,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Ionescu Ciprian,        10,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Pop Petre,               9,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Golescu George,          8,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Papadopol Petre,         7,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Ianculescu Ion,         10,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Popescu Monica,          9,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Georgescu Georgiana,     8,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Popescu Gabriela,        7,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Ionescu Ioana,          10,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Popescu Mirabela,        9,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Georgescu Teodora,       8,     10,       10,       10,      10,       10,       10,  10,     10,     10
+Popescu Miruna,          7,     10,       10,       10,      10,       10,       10,  10,     10,     10
