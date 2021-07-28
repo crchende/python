@@ -1,3 +1,16 @@
+########################################################################
+# Creere tabla de joc pentru x si 0
+# Functionalitatea simuleaza situatia unui joc pe hartie - 2 utilizatori
+# partitioneaza aceeasi hartie / tabla de joc.
+#
+# Aplicatia permite completarea cu x si 0 a pozitiilor de pe tabla de joc,
+# verifica la fiecare mutare daca a castigat cineva, stie sa determine cand 
+# cineva castiga sau cazul de remiza, cand nu castiga nimeni.
+#
+#
+# cip_chende@yahoo.com
+########################################################################
+
 import tkinter as tk
  
 ########################
