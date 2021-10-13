@@ -16,7 +16,7 @@ import logging
 
 '''
  Folosim root logger.
- Functia logging.basicConfig() trebuie apelata la inteputul programului.
+ Functia logging.basicConfig() trebuie apelata la inceputul programului.
  Al doilea apel al functiei nu mai are nici un efect.
  
  Timpul inclus in mesajul logat, poate fi formatata cu ajutorul parametrului datefmt.
