@@ -53,7 +53,7 @@ def func_cu_nr_var_param_si_param_cheie_val(x, y, *args, **kvargs):
     # daca le modific in functie
     try:
         print("Incerc sa modific: args[0] = 5555")
-        args[0] = 5555; # - eroare daca folosesc un tuplu ca args; ar merge daca args este
+        args[0] = 5555;
     except TypeError as e:
         print("!!! Eroare tentativa modificare tuplu:", str(e))
         print("!!! Chiar daca dau args ca o lista, in interior este convertita in tuplu")
@@ -101,7 +101,7 @@ func_cu_nr_var_param(1, 2, *tuplu_arg)
 func_cu_nr_var_param_si_param_cheie_val(1, 2, 100, 200, 300, a = 1000, b = 2000)
 
 #apel folosind variabile tuplu si dictionar
-lst_arg = (5, 10, 15, 20); #merge si cu tuplu dar nu pot modifica valorile in functie
+lst_arg = (5, 10, 15, 20); #merge si cu 
 dict_arg = {'a': 1000, 'b': 2000}
 func_cu_nr_var_param_si_param_cheie_val(1, 2, *lst_arg, **dict_arg)
 
