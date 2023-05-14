@@ -1,0 +1,8 @@
+#!/bin/bash
+#LINUX
+export FLASK_APP=demo_flask
+
+#WINDOWS
+#set FLASK_APP=demo_flask
+
+flask run -p 5010 --reload

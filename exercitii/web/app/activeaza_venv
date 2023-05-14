@@ -1,0 +1,18 @@
+# venv-ul se gaseste in directorul parinte: .venv
+source ../.venv/bin/activate
+
+# daca comanda de mai sus esueaza, creaza ../.venv si instaleaza dependintele
+# venv-ul va ramane activat in acest caz
+if [ $? -eq 0 ]
+then
+    echo "SUCCESS: venv was activated."
+else
+    echo "FAIL: cannot activate venv"
+    echo "Trying to create the venv in the folder: ../.venv"
+    python3 -m venv ../.venv
+    echo "Activating virtual environment"
+    source ../.venv/bin/activate
+    echo "Installing the dependencies"
+    #pip install -r requirements.txt
+    pip install -r quickrequirements.txt
+fi
