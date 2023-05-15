@@ -17,7 +17,12 @@ def index():
     ret += b_url + url_for('exsablon1') + '\n'
     ret += b_url + url_for('salut_formular1') + '\n'
     ret += '</pre>'
+
     ret += '</h3>'
+
+    ret += "<h3>Documentatie:</h3>"
+    ret += " - HTML/CSS etc.: <a href = https://www.w3schools.com/html/default.asp>w3schools</a></br>"
+    ret += " - FLASK:        <a href = https://flask.palletsprojects.com>site framework flask</a>"
 
     return ret
 
