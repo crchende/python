@@ -1,10 +1,33 @@
-import sqlite3
+'''
+Exemplu de biblioteca pentru lucru cu baze de date sqlite, folosind 
+API-ul sqlite3.
+Baza de date creata va contine un singur tabel: nume_si_salut.
+Totul este integrat in clasa DBNumeSiSalut
+Pe langa functiile: conectare, inserare date, citire date din tabel, deconectare,
+functia initializeaza_baza_de_date, va initializa baza de date daca nu exista.
+Ce inseamna initializare:
+ - creare baza de date
+ - creare tabel
+ - adaugare set de date initiale in tabel
+Daca baza de date exista o va crea, va crea tabelul si va adauga datele intabel.
+Daca tabelul este gol, va adauga setul initial de date in tabel.
+
+Resetarea manuala a bazei de date:
+ - se sterge fisierul cu baza de date (numele implicit este db.sqlite)
+   daca ati folosit alt nume in aplicatie, stergeti acel fisier.
+   Pentru a identifica usor baza de date este recomandat sa aiba extensia '.sqlite'
+   Repository-ul este configurat sa ignore fisierele cu aceasta extensie.
+'''
+
 import os
+if __name__ == "__main__":
+    from baza_date_sqlite import BDSqlite
+else:
+    from lib.baza_date_sqlite import BDSqlite
 
-
-class BDNumeSiSalut:
+class BDNumeSiSalut(BDSqlite):
     # implicit, baza de date va fi creata in memorie
-    def __init__(self, nume_baza_date="bazadatesqlite.db"):
+    def __init__(self, nume_baza_date="bd.sqlite"):
         self.nume_bd = nume_baza_date
 
         self.date_initiale = (
@@ -14,67 +37,12 @@ class BDNumeSiSalut:
             ("nume_si_salut", ("Ion", "Buna ziua!"))
         )
 
-    def creaza_conexiunea(self):
-        self.conexiune = sqlite3.connect(self.nume_bd)
-        self.cursor = self.conexiune.cursor()
-
-    def creaza_tabel(self, nume_tabel, *coloane):
-        #sql query
-        #creare tabel
-        sql_q = f"CREATE TABLE {nume_tabel}{coloane}"
-        try:
-            self.cursor.execute(sql_q)
-        except sqlite3.OperationalError as e:
-            print(f"DBG: tabelul {nume_tabel} deja exista!")
-        except Exception as e:
-            print(f"EROARE: Nu s-a putut crea tabelul: {e.__class__.__name__}: {e}")
-            raise(e)
-
-        #verificare:
-        res = self.cursor.execute("SELECT name FROM sqlite_master")
-        tbl = res.fetchone()[0]
-        if tbl == nume_tabel:
-            print(f"INFO: tabelul: {nume_tabel} a fost creat.")
-            return 1
-        else:
-            print(f"EROARE: tabelul {nume_tabel} n-a putut fi creat!")
-            return 0
-
-    def insereaza_in_tabel(self, nume_tabel, *valori):
-        '''
-            Insereaza valori intr-un tabel.
-            Parametrii:
-                nume_tabel: numele tabelului in care se vor insera date
-                *valori:    valorile corespunzatoare unei inregistrari (un singur rand)
-                            care vor fi adaugate
-
-            Return:
-                None
-        '''
-        print(f"DBG: {nume_tabel}, {valori}")
-        sql_q = f"INSERT INTO {nume_tabel} VALUES {valori}"
-        self.cursor.execute(sql_q)
-        self.conexiune.commit()
-
-    def selecteaza_date(self, interogare_sql):
-        '''
-            Executa interogarea sql: interogare_sql si intoarce toate inregistrarile gasite
-            sub forma unei liste de tupluri.
-
-            Parametrii:
-                interogare_sql: sirul de caractere corespunzator interogarii SQL
-            
-            Return:
-                o lista de tupluri, corespunzatoare tuturor inregistrarilor / randurilor 
-                gasite
-        '''
-        res = self.cursor.execute(interogare_sql)
-        # o lista de tupluri: [(elemente rand 1), (elemente rand 2) ...]
-        return res.fetchall()
-
-    def inchide_conexiunea(self):
-        self.conexiune.close()
-    
+    ###########################################################
+    # Metode specializate pe aceasta baza de date
+    ###########################################################
+    def selecteaza_nume_si_salut(self):
+        sql_q = "SELECT * FROM nume_si_salut"
+        return self.selecteaza_date(sql_q)
 
     def initializeaza_baza_de_date(self):
         '''
@@ -93,9 +61,6 @@ class BDNumeSiSalut:
         else:
             print("DBG: nu se mai adauga date, tabelul are deja date")
 
-    def selecteaza_nume_si_salut(self):
-        sql_q = "SELECT * FROM nume_si_salut"
-        return self.selecteaza_date(sql_q)
 
 print("__name__:", __name__)
 if __name__ == "__main__":
@@ -103,7 +68,7 @@ if __name__ == "__main__":
     # cu sqlite baza de date este un fisier
     #
     dir_curent = os.path.abspath(os.path.curdir)
-    nume_fisier_bd = os.path.join(dir_curent, "bazadatesqlite.db")
+    nume_fisier_bd = os.path.join(dir_curent, "bd_demo.sqlite")
     print(f"DBG: fisier baza date sqlite:", nume_fisier_bd)
 
     bmd = BDNumeSiSalut(nume_fisier_bd)
@@ -116,6 +81,3 @@ if __name__ == "__main__":
         print(f"Nume: {el[0]:10}: salut: {el[1]}")
 
     bmd.inchide_conexiunea()
-
-
-
