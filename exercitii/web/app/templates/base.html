@@ -1,0 +1,69 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+    Demo Flask/Pyton
+    {{ super () }}
+{% endblock title %}
+
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-inverse" style="background: navy;">        
+        <a class='navbar-brand' href="/" style="font-size: 25px;">Distribuitor Ciocolata</a>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="/comenzi-producatori" style="font-size: 20px;">Comenzi Producatori</a></li>
+                <li><a href="/produse" style="font-size: 20px;">Produse</a></li>
+                <li><a href="/producatori" style="font-size: 20px;">Producatori</a></li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    
+    <style>
+    #content {
+        margin: 5px;
+    }
+    .tabelulmeu {
+        margin: 10px;
+        border: 3px solid;
+        font-size: 18px;
+        padding: 4px;
+    }
+    
+    article {
+      float: left;
+      padding: 0px;
+      width: 70%;
+      /*background-color: #f1f1f1;*/
+      /*height: 300px; /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+    </style>
+{% endblock head %}
+
+{% block scripts %}
+    {{ super() }}
+    {% include 'scripturi.html' %}
+{% endblock scripts %}
+
+
+{% block content %}
+{% endblock %}

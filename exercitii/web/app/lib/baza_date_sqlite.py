@@ -1,11 +1,37 @@
+'''
+Modulul baza_date_sqlite contine functii metode generice pentru interactiunea cu
+o baza de date sqlite:
+    conectare, inserare date, citire date din tabel, deconectare, etc
+'''
+
 import sqlite3
 
 class BDSqlite:
+    '''
+        Clasa BDSqlite:
+        Contine functii generice pentru interactiunea cu o baza de date sqlite.
+    '''
     def creaza_conexiunea(self):
+        '''
+        Creaza:
+            obiectul conexiune
+            obiectul cursor
+        '''
         self.conexiune = sqlite3.connect(self.nume_bd)
         self.cursor = self.conexiune.cursor()
 
     def creaza_tabel(self, nume_tabel, *coloane):
+        '''
+        Creaza un tabel
+        Parametrii:
+            nume_tabel: numele tabelului pe care vrem sa-l cream
+            coloane:    numele coloanelor: col1, col2, ...
+                        La apelul functiei coloanele pot fi date individual, ca in exemplul de mai sus
+                        sau se poate face o variabila: n_col = [col1, col2, ...] (sau se poate folosi 
+                        tuplu in loc de lista). Daca se foloseste o astfel de variabilam apelul trebuie
+                        sa fie de forma:
+                        creaza_tabel(<nume_tabel>, *<nume var lista/tuplu>)
+        '''
         #sql query
         #creare tabel
         sql_q = f"CREATE TABLE {nume_tabel}{coloane}"
