@@ -82,7 +82,7 @@ class BDSqlite:
                 gasite
         '''
         res = self.cursor.execute(interogare_sql)
-        # o lista de tupluri: [(elemente rand 1), (elemente rand 2) ...]
+    o lista de tupluri: [(elemente rand 1), (elemente rand 2) ...]
         return res.fetchall()
 
     def inchide_conexiunea(self):

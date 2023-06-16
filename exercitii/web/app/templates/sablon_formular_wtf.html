@@ -1,0 +1,43 @@
+<div style="float: top; width: 80%; padding: 14px; background: lightcyan; border-width: 1px">
+    <h1>Exemplu colectare date cu formular</h1>
+</div>
+
+<div id=salut style="float: left; width:40%; height: 40%; padding: 4px; border: solid blue">
+    {% if salut %} 
+        <h2>{{ salut }}</h2>
+    {% else %}
+        ... aici se va afisa salutul de la persoana data in formular ...
+    {% endif %}
+</div>
+<div style="float: left; width: 40%; height: 40%; padding: 4px; border:solid aqua;">
+
+    <form method="POST" action="/ex_formular_wtf"">
+        {{ form.hidden_tag() }}
+        {{ form.nume.label }} {{ form.nume() }} <br/>
+        {{ form.check_box.label }} {{ form.check_box() }} <br/>
+        
+        <!-- apelul simplu radios() genereaza o lista neordonata - ul -->
+        {{ form.radios.label }}
+        <!-- {{ form.radios() }} -->
+        <!-- Optiunile radio pot fi afisate si element cu element -->
+
+        <table>
+        {% for el in form.radios %}
+            <tr>
+                <td>{{ el }}</td> <td>{{ el.label }}</td>
+            </tr>
+        {% endfor %}
+        </table> <br/>
+
+        <!--lista - se poate da dimensiunea -->
+        {{ form.lista_selectie.label }} {{form.lista_selectie(size="2") }} <br/>
+
+        {{ form.submit() }}
+    </form>
+
+</div>
+
+<div style="float: left; width: 80%; padding: 14px; background: lightgrey; border-width: 1px">
+    <h2>Rand 2</h2>
+    === Sfarsit pagina ===
+</div>

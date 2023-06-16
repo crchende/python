@@ -1,0 +1,35 @@
+<div style="float: top; width: 80%; padding: 14px; background: lightcyan; border-width: 1px">
+    <h1>Exemplu colectare date cu formular</h1>
+</div>
+
+<div id=salut style="float: left; width:40%; height: 40%; padding: 4px; border: solid blue">
+    {% if date_formular %} 
+        <pre>{{ date_formular }}</pre>
+    {% else %}
+        ... aici se vor afisa datele din formular ...
+    {% endif %}
+</div>
+<div style="float: left; width: 40%; height: 40%; padding: 4px; border:solid aqua;">
+
+    <p>Primul formular</p>
+    <form id="ID_FORMULAR_1" method="POST" action="/salut_2formulare">
+        <label for=id_nume>Nume:</label></br>
+        <input type="hidden" id="un id" name="NUME_FORMULAR_HIDDEN" value="FORMULAR_1">
+        <input id=id_nume type=text name="nume">
+        <input type=submit name="FROMULAR_1_SUBMIT" value="Nume">
+    </form>
+
+    <hr/>
+    
+    <p>Formularul al doilea</p>
+    <form id="ID_FORMULAR_2" method="POST" action="/salut_2formulare">
+        <label for=id_salut>Salut:</label></br>
+        <input id=id_salut type=text name="salut">
+        <input type=submit name="FORMULAR_2_SUBMIT" value="Formula Salut">
+    </form>
+</div>
+
+<div style="float: top; width: 80%; padding: 14px; background: lightgrey; border-width: 1px">
+    <h2>Rand 2</h2>
+    === Sfarsit pagina ===
+</div>

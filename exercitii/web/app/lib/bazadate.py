@@ -26,7 +26,7 @@ else:
     from lib.baza_date_sqlite import BDSqlite
 
 class BDNumeSiSalut(BDSqlite):
-    # implicit, baza de date va fi creata in memorie
+implicit, baza de date va fi creata in memorie
     def __init__(self, nume_baza_date="bd.sqlite"):
         self.nume_bd = nume_baza_date
 
@@ -38,7 +38,7 @@ class BDNumeSiSalut(BDSqlite):
         )
 
     ###########################################################
-    # Metode specializate pe aceasta baza de date
+Metode specializate pe aceasta baza de date
     ###########################################################
     def selecteaza_nume_si_salut(self):
         sql_q = "SELECT * FROM nume_si_salut"
@@ -65,7 +65,7 @@ class BDNumeSiSalut(BDSqlite):
 print("__name__:", __name__)
 if __name__ == "__main__":
     #
-    # cu sqlite baza de date este un fisier
+cu sqlite baza de date este un fisier
     #
     dir_curent = os.path.abspath(os.path.curdir)
     nume_fisier_bd = os.path.join(dir_curent, "bd_demo.sqlite")
