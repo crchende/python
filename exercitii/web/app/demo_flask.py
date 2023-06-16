@@ -41,6 +41,9 @@ def index():
     str_url = b_url + url_for('exemplu_bd')
     ret += '<a href=' + str_url + '>' + str_url + '</a>\n'
 
+    str_url = b_url + url_for('fc_view_form_wtf')
+    ret += '<a href=' + str_url + '>' + str_url + '</a>\n'
+
     ret += '</pre>'
 
     ret += '</h3>'
