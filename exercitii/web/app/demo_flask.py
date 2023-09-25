@@ -24,7 +24,7 @@ class ExFormWTF(FlaskForm):
 @app.route("/")
 def index():
     b_url = request.base_url.rstrip('/')
-    ret = "<h1>Exemplu simplu de apliicatie web cu python si flask</h1>"
+    ret = "<h1>Exemplu de aplicatie web minimala cu python si flask</h1>"
     ret += "<i><font color='gray'>cip_chende@yahoo.com</font></i>"
     ret += "<h2>URL-uri suportate:</h2>"
     ret += '<h3>'
