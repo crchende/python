@@ -1,3 +1,16 @@
+Exemplu aplicatie
+===
+
+![image](https://github.com/crchende/python/assets/57460107/4089bf91-6930-4b2e-b9ba-9961ddc5ee67)
+
+![image](https://github.com/crchende/python/assets/57460107/9ec505b5-2c40-4d6a-9ca5-ac6c130fdd40)
+
+![image](https://github.com/crchende/python/assets/57460107/7f315837-064a-42ef-a5ca-77c024352be0)
+
+
+
+
+
 FORMULARE
 ===
 
