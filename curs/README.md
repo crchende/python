@@ -192,7 +192,9 @@ Astfel, putem crea `clase` - tipuri de date complexe - care includ atat propriet
 
 (Ne putem gandi la clase ca la o extensie a structurilor din C, care pe langa variabile de diverse tipuri pot include si functii)
 
-Variabilele de tip clasa se numesc obiecte. Sau obiectele sunt `instante` ale `claselor`.
+Un `obiect` este o instanta a unei `clase`. 
+
+Un alt mod de a exprima acelasi lucru este: o variabila de tip clasa este un obiect.
 
 Exemplu:
 
