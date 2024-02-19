@@ -187,6 +187,8 @@ Exemple de utilizare metodelor de formatare CSV, JSON, YAML - fisierele sunt in 
 `POO`
 `(Object Oriented Programming / OOP)`
 
+[Exemplu: clase_obiecte_relatii.py](https://github.com/crchende/python/blob/master/curs/clase_obiecte_relatii.py)
+
 Metoda de programare orientata obiect ne pune la dispozitie mijloace prin care putem reprezenta in cod obiecte generate pe baza obiectelor cu care ne intalnim in viata de zi cu zi.
 Astfel, putem crea `clase` - tipuri de date complexe - care includ atat proprietati/atribute (variabile) cat si metode (functii) 
 
@@ -212,7 +214,29 @@ Exemplu:
    >    - `masina_mea = Masina(culoare='verde', combustibil='gaz', putere='100KW')`
    >    - apelul creaza obiectul masina_mea configureaza proprietatile specificate in apel.
 
-[Exemplu: clase_obiecte_relatii.py](https://github.com/crchende/python/blob/master/curs/clase_obiecte_relatii.py)
+
+Notiuni de baza referitoare la programarea orientata obiect:
+
+   - **Clasa**:               Tip de date care poate contine atat atribute/proprieteati (variabile) cat si metode (functii)
+     
+   - **Obiect**:              O instanta a unei clase / o variabila de tip clasa
+     
+   - **Abstractizare**        Cand modelam obiectul ne referim la latura care ne intereseaza, de exemplu pentru o aplicatie 'car sharing' ne vor interesa mai mult detalii de utilizare si partajare a masinii.
+                              pentru o aplicatie de reparatii / proiectare, ne vor interesa mai mult detalii tehnice si mai putin detalii de folosire a masinii in regim 'car sharing'.
+     
+   - **Mostenire**:           Pentru reutilizarea codului, clasele pot fi organizate in ierarhii de clase de baza (clase parinte) si clase derivate (clase copil). Clasele copil mostenesc proprietatile si metodele
+                              claselor parinte.
+     
+   - Polimorfism              'mai multe forme' - clasele copil pot suprascrie proprietati si metode ale claselor parinte. Desi au aceeasi forma (nume in acest caz), valoarea, functionalitatea metodei este diferita
+                              intre parinte si copil.
+     
+   - Incapsulare              Informatiile interene ale clasei / obiectului nu sunt vizibile in exterior (de ex, nu putem accesa direct, ca utilizatori, un anume surub din cutia de viteze)
+                              Metodele si proprietatile claselor pot fi clasificate in `publice`, `_protejate` si `__private` (caracterul variabilei este stabilit de prefixul _ sau __). 
+                              Cele publice sunt accesibile din exterior. Cele private nu. 
+                              In Python accesul nu este atat de strict ca in alte limbaje. Variabilele _protejate pot fi accesate direct. Cele __private nu pot fi accesate direct dar pot fi accesate prin
+                              prefixarea acestora cu _Clasa__variabila.
+     
+
 
 
 # Reprezentari schematice ajutatoare de pe LINKEDIN
