@@ -4,10 +4,10 @@
 # Cuprins
 
 1. [Tipuri de date fundamentale, functii, tratare erori.](tipuri-de-date-fundamentale-functii-tratare-erori)
-        1. [Tipuri de date fundamentale](#tipuri-de-date-fundamentale)
-        1. [Instructiuni de control](#instructiuni-de-control)
-        1. [Functii](#functii)
-        1. [Tratare erori](tratare-erori)
+   1. [Tipuri de date fundamentale](#tipuri-de-date-fundamentale)
+   1. [Instructiuni de control](#instructiuni-de-control)
+   1. [Functii](#functii)
+   1. [Tratare erori](tratare-erori)
 
 1. [Lucru cu fisiere](#lucru-cu-fisiere)
 1. [Serializarea datelor](#serializarea-datelor)
@@ -104,7 +104,7 @@ In loc sa primeasca un mesaj de eroare automat, generat de python, se primeste u
     
 
 
-# 2. Lucru cu fisiere
+# Lucru cu fisiere
 [cuprins](#cuprins)
 
 Programele, in timpul executiei (un proces este un program aflat in executie) folosesc memoria pentru a incarca datele de care au nevoie pentru a le procesa.
@@ -124,9 +124,10 @@ Python pune la dispozitie functii prin intermediul carora se pot inchide / desch
     > f.close()                         # inchidere fisier
     
 
-# 3. Serializarea datelor
+# Serializarea datelor
+[cuprins](#cuprins)
 
-si reprezentarea datelor in mod TEXT cu `CSV`, `JSON`, `YAML`
+si reprezentarea acestora in mod TEXT cu `CSV`, `JSON`, `YAML`
 
 Serializare datelor - transformarea datelor intr-un sir de octeti care poate fi scris intr-un fisier si care apoi poate fi preluat din fisier si transformat folosit pentru crea datele in memorie.
 Modulul 'pickle' din python pune la dispozitie metode de serializare - in forma `binara`.
@@ -172,34 +173,47 @@ Exemple de utilizare metodelor de formatare CSV, JSON, YAML - fisierele sunt in 
     > fisieer1_json.json         lucru_cu_json.py
 
 
-# 4. Programare Orientata Obiect - POO 
-(Object Oriented Programming / OOP)
+# Programare Orientata Obiect
+[cuprins](#cuprins)
+
+`POO` 
+`(Object Oriented Programming / OOP)`
 
 
 # Reprezentari schematice ajutatoare de pe LINKEDIN
+[cuprins](#cuprins)
+
+
 `[sursa: linkedin]`
+
 ![image](https://github.com/crchende/personal/assets/57460107/33ff569c-43a3-440f-b219-fcc0036af67a)
 
 `[sursa: linkedin]`
+
 ![image](https://github.com/crchende/personal/assets/57460107/3feec423-fe9d-4fa9-8977-db54485b7554)
 
 
 `[sursa: linkedin]`
+
 ![image](https://github.com/crchende/personal/assets/57460107/229d8bda-b934-43eb-bc24-f8c4f1295ab4)
 
 
 `[sursa: linkedin]`
+
 ![image](https://github.com/crchende/personal/assets/57460107/4ceab77c-84f1-47f2-a935-12aa1f545fe3)
 
 
 `[sursa: linkedin]`
+
 ![image](https://github.com/crchende/personal/assets/57460107/73c0c083-166b-4a33-9030-30178a93c26c)
 
 
 `[sursa: linkedin]`
+
 ![image](https://github.com/crchende/personal/assets/57460107/899809bb-0e31-455d-b68c-2a7c03ffd728)
 
 
 `[sursa: linkedin]`
+
 ![image](https://github.com/crchende/personal/assets/57460107/a9bfa6b4-d6be-4f68-982f-31a0cd5f4163)
 
