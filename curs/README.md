@@ -8,7 +8,7 @@
         1. [Instructiuni de control](#instructiuni-de-control)
         1. [Functii](#functii)
         1. [Tratare erori](tratare-erori)
-  
+
 1. [Lucru cu fisiere](#lucru-cu-fisiere)
 1. [Serializarea datelor](#serializarea-datelor)
 1. 
