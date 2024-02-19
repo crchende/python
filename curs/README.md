@@ -215,7 +215,7 @@ Exemplu:
    >    - apelul creaza obiectul masina_mea configureaza proprietatile specificate in apel.
 
 
-Notiuni de baza referitoare la programarea orientata obiect:
+### Notiuni de baza referitoare la programarea orientata obiect:
 
    - `Clasa`:               Tip de date care poate contine atat atribute/proprieteati (variabile) cat si metode (functii)
      
