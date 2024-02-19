@@ -15,6 +15,7 @@
 1. [Exemplu Aplicatie WEB cu Flask](https://github.com/crchende/sysinfo)
 1. [Exemplu utilizare biblioteca pentru trasare grafice - matplotlib](https://github.com/crchende/sysinfo/tree/main/app/grafice)
 1. [Reprezentarei schematice ajutatoare de pe LINKEDIN](#reprezentari-schematice-ajutatoare-de-pe-linkedin)
+1. [Ghid de pregatire Python](https://docs.google.com/spreadsheets/d/1NDuLDkdwEt3iD7Z7VuLEAnn4gtN9X-gJTuxWxrBPZLE/edit#gid=185047453)
 
 # Elemente de baza
 [cuprins](#cuprins)
