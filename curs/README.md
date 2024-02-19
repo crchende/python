@@ -111,11 +111,15 @@ Ca nota generala, modulele `pickle`, `yaml`, `json` au metode similare pentru in
 Modulul CSV nu foloseste metodele `load` si `dump` ci `reader` si `writer`.
 
 Schimbul de date intre aplicatii este frecvent. Datele pot fi de diverse tipuri (siruri, liste, dictionare etc.) si in functie de limbajul de programare folosit, vor fi reprezentate in memorie pe mai multi octeti. Modul in care octetii sunt structurati (modul intern de reprezentare) - ce reprezinta primul octet, al doilea etc. -  difera de la un limbaj de programare la altul. Datele afisate in acelasi mod in care sunt reprezentate intern, nu sunt lizibile / este forte greu de intles ce reprezinta. 
+
 Pentru om este usor sa scrie si sa citeasca date in format text. Calculatorul analizeaza usor datele sub forma de text (operatiunea de parsare) in vederea generarii acestora in format intern.
-Mai mult, schimbul de date in mod text este frecvent si intre operatori umani si calculator. Se folosesc frecvent fisiere de configurare pentru a configura modul in care arata si se comporta o aplicatie.
+
+Schimbul de date in mod text este frecvent si intre operatori umani si calculator (nu doar intre aplicatii). Se folosesc frecvent fisiere de configurare pentru a configura modul in care arata si se comporta o aplicatie.
 
 Exemple de utilizare date formatate JSON, YAML, CSV.
+
 Uneltele folosite in DevOps: Jenkins, GitHub, Terraform, Ansible, Kubernetes - folosesc frecvent fisiere in format JSON, YAML.
+
 Aplicatia Excel sau aplicatii similare de calcul tabelar pot salva datele in format CSV sau pot incarca fisiere CSV (text, cu linii si valori pe linii separate cu virgula).
 
 Datele, reprezentate sub format JSON si YAML se mai numesc si date serializate. Prin serializare, se transforma datele din reprezentarea interna (octeti structurati intr-un anume mod) in format text, inteligibil si pentru om si usor de transformat in format intern pentru calculator.
