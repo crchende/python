@@ -187,6 +187,8 @@ Exemple de utilizare metodelor de formatare CSV, JSON, YAML - fisierele sunt in 
 `POO` 
 `(Object Oriented Programming / OOP)`
 
+[Exemplu: clase_obiecte_relatii.py](https://github.com/crchende/python/blob/master/curs/clase_obiecte_relatii.py)
+
 
 # Reprezentari schematice ajutatoare de pe LINKEDIN
 [cuprins](#cuprins)
