@@ -20,6 +20,8 @@
 [cuprins](#cuprins)
 
 ## Tipuri de date fundamentale
+[Exemplu: lucru_tipuri_de_date_fundamentale.py](https://github.com/crchende/python/blob/master/curs/lucru_tipuri_de_date_fundamentale.py)
+
 Python pune la dispozitie mai multe tipuri de date cum ar fi:
 
   - **date numerice**: intregi (`int`), reale (`float`)
@@ -109,6 +111,8 @@ In loc sa primeasca un mesaj de eroare automat, generat de python, se primeste u
 
 # Lucru cu fisiere
 [cuprins](#cuprins)
+
+[Exemplu: citire_scriere_fisier.py](https://github.com/crchende/python/blob/master/curs/citire_scriere_fisier.py:)
 
 Programele, in timpul executiei (un proces este un program aflat in executie) folosesc memoria pentru a incarca datele de care au nevoie pentru a le procesa.
 Daca dorim sa pastram aceste informatii este necesar sa le salvam pe hard-disc, in fisiere. Daca dorim sa utilizam informatii existente pe hard-disc, trebuie sa putem citi fisiere.
