@@ -12,6 +12,8 @@
 1. [Lucru cu fisiere](#lucru-cu-fisiere)
 1. [Serializarea datelor](#serializarea-datelor)
 1. [Programare Orientata Obiect](#programare-orientata-obiect)
+1. [Exemplu Aplicatie WEB cu Flask](https://github.com/crchende/sysinfo)
+1. [Exemplu utilizare biblioteca pentru trasare grafice - matplotlib](https://github.com/crchende/sysinfo/tree/main/app/grafice)
 1. [Reprezentarei schematice ajutatoare de pe LINKEDIN](#reprezentari-schematice-ajutatoare-de-pe-linkedin)
 
 # Tipuri de date fundamentale, functii, tratare erori.
