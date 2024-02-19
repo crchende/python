@@ -184,8 +184,29 @@ Exemple de utilizare metodelor de formatare CSV, JSON, YAML - fisierele sunt in 
 # Programare Orientata Obiect
 [cuprins](#cuprins)
 
-`POO` 
+`POO`
 `(Object Oriented Programming / OOP)`
+
+Metoda de programare orientata obiect ne pune la dispozitie mijloace prin care putem reprezenta in cod obiecte generate pe baza obiectelor cu care ne intalnim in viata de zi cu zi.
+Astfel, putem crea `clase` - tipuri de date complexe - care includ atat proprietati/atribute (variabile) cat si metode (functii) - extensie a structurilor din C, prin adaugarea de metode.
+
+Variabilele de tip clasa se numesc obiecte. Sau obiectele sunt `instante` ale `claselor`.
+
+Exemplu:
+
+   > `CLASA`
+   > `Masina`
+   >    - putem asocia notiunea de masina cu o clasa. Cand spunem masina intelegem ceva complex - roti, motor, caroserie, etc
+   >    - este ceva abstract / generic
+   >
+   > `OBIECT` 
+   > `masina_mea`
+   >    - este un obiect de tip masina
+   >    - este masina ea, stiu care este, pot sa o conduc etc
+   >
+   > INSTANTIERE / creare variabila de tip clasa in Python
+   >    - `masina_mea = Masina(culoare='verde', combustibil='gaz', putere='100KW')`
+   >    - apelul creaza obiectul masina_mea configureaza proprietatile specificate in apel.
 
 [Exemplu: clase_obiecte_relatii.py](https://github.com/crchende/python/blob/master/curs/clase_obiecte_relatii.py)
 
