@@ -1,6 +1,17 @@
-# 1. Tipuri de date fundamentale, functii, tratare erori.
+`Curs Python`
+=========================================================
 
-## 1.1. Tipuri de date fundamentale
+# Cuprins
+
+1. [Tipuri de date fundamentale, functii, tratare erori.](tipuri-de-date-fundamentale-functii-tratare-erori)
+  1. [Tipuri de date fundamentale](#tipuri-de-date-fundamentale)
+  1. [Instructiuni de control](#instructiuni-de-control)
+  1. [Functii](#functii)
+  1. [Tratare erori](tratare-erori) 
+
+# Tipuri de date fundamentale, functii, tratare erori.
+
+  ## Tipuri de date fundamentale
 Python pune la dispozitie mai multe tipuri de date cum ar fi:
 
   - **date numerice**: intregi (`int`), reale (`float`)
@@ -30,7 +41,15 @@ Python pune la dispozitie mai multe tipuri de date cum ar fi:
       >          'cheie3': [1, 2, 3],
       >      }
 
-## 1.2. Functii
+  ## Instructiuni de control
+
+  `if ... elif ... else`,
+  
+  `for element in collection / for i in range(strat, stop, step)`, 
+  
+  `while`
+
+  ## Functii
 
 Functia este o constructie care permite sa dam nume unui bloc de cod. De fiecare date cand este nevoie sa executam acel bloc de cod, in loc sa-l rescriem in program unde avem nevoie de el, apelam functia care contine acel bloc de cod. In Pyton, o functie este un obiect. Sintaxa folosita pentru a defini o functie incepe cu linia:  `def numele_functie(parametrii):`, urmata de corpul functiei pe urmatoarele linii. Liniile care definesc blocul de cod care reprezinta corpul functieie, trebuie indentate. Se considera ca functia s-a incheiat cand indentarea revine la nivelul primei linii - care cuprinde `def`, `nume functie`, `parametrii`.
 
@@ -46,7 +65,7 @@ Functia este o constructie care permite sa dam nume unui bloc de cod. De fiecare
       > argumente: 4, 3  # rezultat apel
 
 
-## 1.3 Tratare erori
+## 1.1 Tratare erori
 
 Uneori ne putem astepta ca un anuem apel sa genereze eroare si sa intrerupa functionarea programului. Este recomandat ca in astfel de cazuri sa folosim mecanismul de tratare a erorilor din Python, ca capturam eroarea si sa generam un mesaj de eroare care sa-l ajute pe utilizator sa inteleaga ca nu a folosit corect programul. Tratarea erorilor in Python se face cu ajutorul constructiei `try: ... except ... :` :
     > try:
@@ -140,6 +159,10 @@ Exemple de utilizare metodelor de formatare CSV, JSON, YAML - fisierele sunt in 
     > fisier1_csv.csv            lucru_cu_csv.py
     > fisier1_yaml.yaml          lucru_cu_yaml.py
     > fisieer1_json.json         lucru_cu_json.py
+
+
+# 4. Programare Orientata Obiect - POO 
+(Object Oriented Programming / OOP)
 
 
 # Reprezentari schematice ajutatoare de pe LINKEDIN
