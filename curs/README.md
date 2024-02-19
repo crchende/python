@@ -3,7 +3,7 @@
 
 # Cuprins
 
-1. [Tipuri de date fundamentale, functii, tratare erori.](tipuri-de-date-fundamentale-functii-tratare-erori)
+1. [Elemente de baza](tipuri-de-date-fundamentale-functii-tratare-erori)
    1. [Tipuri de date fundamentale](#tipuri-de-date-fundamentale)
    1. [Instructiuni de control](#instructiuni-de-control)
    1. [Functii](#functii)
@@ -16,7 +16,7 @@
 1. [Exemplu utilizare biblioteca pentru trasare grafice - matplotlib](https://github.com/crchende/sysinfo/tree/main/app/grafice)
 1. [Reprezentarei schematice ajutatoare de pe LINKEDIN](#reprezentari-schematice-ajutatoare-de-pe-linkedin)
 
-# Tipuri de date fundamentale, functii, tratare erori.
+# Elemente de baza
 [cuprins](#cuprins)
 
 ## Tipuri de date fundamentale
