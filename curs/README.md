@@ -3,8 +3,8 @@
 
 # Cuprins
 
-1. [Elemente de baza](tipuri-de-date-fundamentale-functii-tratare-erori)
-   1. [Tipuri de date fundamentale](#tipuri-de-date-fundamentale)
+1. [Elemente de baza](#elemente-de-baza)
+1. [Tipuri de date fundamentale](#tipuri-de-date-fundamentale)
    1. [Instructiuni de control](#instructiuni-de-control)
    1. [Functii](#functii)
    1. [Tratare erori](tratare-erori)
