@@ -188,7 +188,9 @@ Exemple de utilizare metodelor de formatare CSV, JSON, YAML - fisierele sunt in 
 `(Object Oriented Programming / OOP)`
 
 Metoda de programare orientata obiect ne pune la dispozitie mijloace prin care putem reprezenta in cod obiecte generate pe baza obiectelor cu care ne intalnim in viata de zi cu zi.
-Astfel, putem crea `clase` - tipuri de date complexe - care includ atat proprietati/atribute (variabile) cat si metode (functii) - extensie a structurilor din C, prin adaugarea de metode.
+Astfel, putem crea `clase` - tipuri de date complexe - care includ atat proprietati/atribute (variabile) cat si metode (functii) 
+
+(Ne putem gandi la clase ca la o extensie a structurilor din C, care pe langa variabile de diverse tipuri pot include si functii)
 
 Variabilele de tip clasa se numesc obiecte. Sau obiectele sunt `instante` ale `claselor`.
 
