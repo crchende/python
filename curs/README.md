@@ -11,7 +11,8 @@
 
 1. [Lucru cu fisiere](#lucru-cu-fisiere)
 1. [Serializarea datelor](#serializarea-datelor)
-1. 
+1. [Programare Orientata Obiect](#programare-orientata-obiect)
+1. [Reprezentarei schematice ajutatoare de pe LINKEDIN](#reprezentari-schematice-ajutatoare-de-pe-linkedin)
 
 # Tipuri de date fundamentale, functii, tratare erori.
 [cuprins](#cuprins)
