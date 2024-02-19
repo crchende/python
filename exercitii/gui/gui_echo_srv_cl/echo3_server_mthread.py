@@ -45,7 +45,7 @@ def handle_client_connection(connection, address, connection_count):
 
 
 HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
-PORT = 7000        # Port to listen on (non-privileged ports are > 1023)
+PORT = 7000    Port to listen on (non-privileged ports are > 1023)
 
 s = socket(AF_INET, SOCK_STREAM)
 s.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)

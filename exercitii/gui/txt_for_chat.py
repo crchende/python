@@ -76,7 +76,7 @@ def send_msg(from_source, to_destination, sep_frmt_tag):
     
     to_destination['state'] = 'normal'
     #ts = time.ctime() # standard format: 'Mon Jul 26 23:32:50 2021'
-    # formating the time as described in the format string: "%y ..."
+formating the time as described in the format string: "%y ..."
     ts = time.strftime("%y-%m-%d %X %Z", time.localtime())
     
     to_destination.insert('end', 'Sent: @' + ts + '\n', sep_frmt_tag)

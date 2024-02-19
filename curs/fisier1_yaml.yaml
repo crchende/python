@@ -1,0 +1,26 @@
+- lst_el1
+- lst_el2
+- lst_el3_dict:
+    k1: v1
+    k2: v2
+- lst_el4_str_1
+  lst_el4_str_2
+- lst_dicts_el5:
+    - d1_k5_1: v5_1
+      d1_k5_2: v5_2
+    - d2_k5_1: VALOARE
+- | 
+  lst el 6
+  un sir mai lung
+  pe mai multe randuri
+  si care pastreaza \n
+- >
+  sir mai lung
+  fara new line
+  chiar daca aici
+  este scris pe mai 
+  multe linii
+  
+# lista in lista
+- - l6
+  - l7

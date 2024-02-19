@@ -66,19 +66,19 @@ with open('note_csv.txt', mode = 'r') as csv_f_id:
             
         data_type = row[0]
         
-        # cheia dictionarului este tipul de date adica 'Materii' sau nume elev
-        # continutul dictionarului este fie lista de materii, fie lista de note
+    cheia dictionarului este tipul de date adica 'Materii' sau nume elev
+    continutul dictionarului este fie lista de materii, fie lista de note
         
         if data_type != "Nume Prenume":
-            # liniile cu notele pentru fiecare elev
+        liniile cu notele pentru fiecare elev
             
-            # vreau sa am o lista cu elevii
+        vreau sa am o lista cu elevii
             dict_medii['elevi'].append(data_type)
             
-            # pentru fiecare elev adaug o intrare in dictionar:
-            # cheie   - nume elev
-            # valoare - lista cu medii 
-            # folosim list comprehension pentru a genera o noua lista
+        pentru fiecare elev adaug o intrare in dictionar:
+        cheie   - nume elev
+        valoare - lista cu medii 
+        folosim list comprehension pentru a genera o noua lista
             dict_medii[data_type] = [x.strip() for x in row[1:]]
             
         else:
@@ -89,9 +89,9 @@ with open('note_csv.txt', mode = 'r') as csv_f_id:
 # Afisare dictionar
 i = 1
 for k in dict_medii:
-    # folosire f-string - formatare 'inline'
-    # echivalent cu:
-    # "{:3} {:20} {}".format(i, k, dict_medii[k])
+folosire f-string - formatare 'inline'
+echivalent cu:
+"{:3} {:20} {}".format(i, k, dict_medii[k])
     print(f'{i:3} {k:20} {dict_medii[k]}')
     i += 1
 
@@ -115,20 +115,20 @@ with open('note_csv.txt', mode='r') as csv_f_id:
     print("DBG: csv_dict_reader:", csv_dict_reader)
     
     i = 0
-    # fiecare linie este un dictionar, avand chei, numele din prima linie din CSV
+fiecare linie este un dictionar, avand chei, numele din prima linie din CSV
     for row in csv_dict_reader:
         if i == 0: # i poate fi oricare, join in acest caz ia cheile din dictionar
             cap_tabel = " ".join(row)
             print("DBG: cap tabel:", cap_tabel)
             print(f'linie {i}: {row}')
   
-        # cheile dictionarului si valorile contin spatii ...
-        # DictReader
+    cheile dictionarului si valorile contin spatii ...
+    DictReader
         #print("DBG: Linie citita cu DictReader: ", row)
         #print("DBG: Dictionar pe linie: ", row)
         
-        # Salvez liniile intr-o lista pentru putea utiliza informatia in afara blocului 'with'
-        # Vom avea o lista de dictionare, fiecare dictionar cu aceleasi chei - prima linie din fisierul csv
+    Salvez liniile intr-o lista pentru putea utiliza informatia in afara blocului 'with'
+    Vom avea o lista de dictionare, fiecare dictionar cu aceleasi chei - prima linie din fisierul csv
         lst_dict_linii.append(row)
         i += 1
 
@@ -143,8 +143,8 @@ with open('note_csv.txt', mode='r') as csv_f_id:
 '''
 print(csv_dict_reader)
 for row in csv_dict_reader:
-    # cheile dictionarului si valorile contin spatii ...
-    # DictReader
+cheile dictionarului si valorile contin spatii ...
+DictReader
     #print("DBG: Linie citita cu DictReader: ", row)
     for k in row:
         print(f'"{k:30}" -> {row[k]}')

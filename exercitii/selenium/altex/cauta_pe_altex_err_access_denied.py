@@ -60,13 +60,13 @@ def gaseste_entry_search(x_path_entry_cauta):
     e_search = ""
     
     try:
-        # gasire entry-box "Search"
+    gasire entry-box "Search"
         print("DBG: xpath = ", x_path_entry_cauta)
         e_search = wb.find_element_by_xpath(x_path_entry_cauta)
 
-        # atribute / proprietati enry-box
-        # exista o suprapunere intre atribute si proprietati; de multe ori se poate folosi fie get attribute fie get_property
-        # o diferenta ar fi ca proprietatile sunt cele configurabile de client - ex. checkbox 'ischecked'
+    atribute / proprietati enry-box
+    exista o suprapunere intre atribute si proprietati; de multe ori se poate folosi fie get attribute fie get_property
+    o diferenta ar fi ca proprietatile sunt cele configurabile de client - ex. checkbox 'ischecked'
         e_search_attr = {}
         e_search_attr["cl"] = e_search.get_attribute("class")
         e_search_attr["inputmode_attr"] = e_search.get_attribute("inputmode") #doar attribyte, nu este si property
@@ -125,8 +125,8 @@ def cauta_pe_site(id_obj_cautare, de_cautat, x_path_entry_cauta):
         else:
             print("Pagina nu s-a incarcat bine ... stergem cookie-urile (posibil si cache-ul) si mai incercam ...")
             url_curent = wb.current_url; # dupa ce scriem ceva in entry-ul de cautare si facem submit, se modifica URL-ul
-                                         # URL-ul acesta ar trebui sa ne duca la artcolele cautate - a fost format dupa "Enter"
-                                         # in entry-ul de cautare in care s-a inclus textul de cautat.
+                                     URL-ul acesta ar trebui sa ne duca la artcolele cautate - a fost format dupa "Enter"
+                                     in entry-ul de cautare in care s-a inclus textul de cautat.
             
             print("URL-ul de accesat: ", url_curent)            
             wb.delete_all_cookies()

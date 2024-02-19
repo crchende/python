@@ -16,7 +16,7 @@ de_cautat = "telefoane" #- merge cautarea fara probleme
 #de_cautat = "masina de spalat" #- merge cautarea fara probleme
 
 #de_cautat = "laptopuri"; # In aceleasi conditii ca si mai sus, cautarea esueaza
-#                         # vezu o rezolvare in cauta_altex_err_access_denied.py
+#                     vezu o rezolvare in cauta_altex_err_access_denied.py
 ###############
 # Mesaj generat:
 #Access Denied

@@ -116,7 +116,7 @@ def verifica_joc(tbl_stari):
             print(" ** r: ", r)
             return prim_el_d2, "DIAG2", r
 
-    # verifica daca s-a terminat jocul. MAX 9 mutari
+verifica daca s-a terminat jocul. MAX 9 mutari
     mutari = 0
     for k in tbl_stari:
         if tbl_stari[k] != "":
@@ -125,7 +125,7 @@ def verifica_joc(tbl_stari):
             if mutari == 9:
                 return "=", "REMIZA", ""
 
-    # mai sunt mutari, si n-a castigat inca nimeni
+mai sunt mutari, si n-a castigat inca nimeni
     return "", "", ""
         
 
@@ -153,11 +153,11 @@ def actiune_buton(button_var, label_var, txt):
     caracter_castigator, tip_castig, unde_castig  = verifica_joc(tabela_stari)
 
 
-    # Posibil nevoie sa se mute pe server aceasta analiza.
+Posibil nevoie sa se mute pe server aceasta analiza.
     print ("Situatie Joc:", caracter_castigator, tip_castig, unde_castig)
-    # La fiecare apasare a unui buton verific daca am castigat
+La fiecare apasare a unui buton verific daca am castigat
     if (caracter_castigator == "x") or (caracter_castigator =="0"):
-        # Unul din jucatori a castigat:
+    Unul din jucatori a castigat:
         label_var.configure(text = "Victorie: " + str(caracter_castigator) + ", " + str(tip_castig) + " " + str(unde_castig))
         fa_la_victorie()
         #resetez aceste valori. Am vazut ca uneori raman setate. Nu stiu explicatia
@@ -165,21 +165,21 @@ def actiune_buton(button_var, label_var, txt):
     elif caracter_castigator == "=":
         label_var.configure(text = str(tip_castig))
 
-    # Marcare loc unde ar trebui sa comunic cu serverul
+Marcare loc unde ar trebui sa comunic cu serverul
     trimite_mutare_la_server(txt, la_mutare)
         
-    # Marcare loc unde ar trebui sa astept mutarea adversarului
+Marcare loc unde ar trebui sa astept mutarea adversarului
     primeste_mutare_de_la_server()
     
 
 def joc_nou():
     global la_mutare
-    # de sters tot ce este afisat pe fiecare buton
-    # de resetat mesajul din bara de stare
+de sters tot ce este afisat pe fiecare buton
+de resetat mesajul din bara de stare
     row = 0
     for i in range(0, 9):
         row = i // 3; #3 butoane pe linie;    i // 3 impartire fara rest; 5 / 3 = 1; 7 / 3 = 2
-        #              pe prima linie vom adauga butoane de control; butoanele jocului incep de la linia 1, nu 0
+                 pe prima linie vom adauga butoane de control; butoanele jocului incep de la linia 1, nu 0
         col = i % 3;  #3 butoane pe coloana;  i %  3 restul impartirii;   5 / 3 = 2; 7 % 3 = 1
         
         eval("b_"+str(row) + str(col)+".configure(text = '', image = img_nimic, state = 'normal')")
@@ -190,12 +190,12 @@ def joc_nou():
 
         
 def fa_la_victorie():
-    # de sters tot ce este afisat pe fiecare buton
-    # de resetat mesajul din bara de stare
+de sters tot ce este afisat pe fiecare buton
+de resetat mesajul din bara de stare
     row = 0
     for i in range(0, 9):
         row = i // 3; #3 butoane pe linie;    i // 3 impartire fara rest; 5 / 3 = 1; 7 / 3 = 2
-        #              pe prima linie vom adauga butoane de control; butoanele jocului incep de la linia 1, nu 0
+                 pe prima linie vom adauga butoane de control; butoanele jocului incep de la linia 1, nu 0
         col = i % 3;  #3 butoane pe coloana;  i %  3 restul impartirii;   5 / 3 = 2; 7 % 3 = 1
 
         eval("b_"+str(row) + str(col)+".configure(state = 'disable')")
@@ -213,9 +213,9 @@ def trimite_mutare_la_server(pozitie, valoare):
 def primeste_mutare_de_la_server():
     global tabela_stari
     print("Aici voi astepta mutarea adversarului, prin intermediul serverului.")
-    # citeste ce trimite serverul
-    # alalizeaza
-    # actuaizeaza interfata grafica
+citeste ce trimite serverul
+alalizeaza
+actuaizeaza interfata grafica
     
 
 # generare dinamica butoane
@@ -243,12 +243,12 @@ img_nimic = tk.Image(file = "../imgs/mele/48x48/nimic.png", imgtype = "photo")
 row = 0
 for i in range(0, 9):
     row = i // 3; #3 butoane pe linie;    i // 3 impartire fara rest; 5 / 3 = 1; 7 / 3 = 2
-    #              pe prima linie vom adauga butoane de control; butoanele jocului incep de la linia 1, nu 0
+             pe prima linie vom adauga butoane de control; butoanele jocului incep de la linia 1, nu 0
     col = i % 3;  #3 butoane pe coloana;  i %  3 restul impartirii;   5 / 3 = 2; 7 % 3 = 1
 
     #exec("b_"+str(i)+" = tk.Button(main_win, text = "+str(i)+", command = lambda: print("+str(i)+"))")
     b_var = "b_"+str(row) + str(col)
-    #                                  text = "+str(i)+
+                                 text = "+str(i)+
     exec(b_var+" = tk.Button(x_0_frm, text = '  ', image = img_nimic, command = lambda: actiune_buton(" + b_var + ", l1, '"+str(row) + str(col)+"'))")
     eval("b_"+str(row) + str(col)+".grid(row = "+str(row)+", column = "+str(col)+")")
     

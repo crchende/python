@@ -49,8 +49,8 @@ def func_cu_nr_var_param_si_param_cheie_val(x, y, *args, **kvargs):
     for k in kvargs:
         print("k: ", k, "; val: ", kvargs[k])
         
-    # Verificare - vreau sa vad ce se intampla cu vaiabilele args si kwargs in exterior
-    # daca le modific in functie
+Verificare - vreau sa vad ce se intampla cu vaiabilele args si kwargs in exterior
+daca le modific in functie
     try:
         print("Incerc sa modific: args[0] = 5555")
         args[0] = 5555;

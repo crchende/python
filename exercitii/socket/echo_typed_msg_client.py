@@ -4,7 +4,7 @@
 import socket
 
 HOST = '127.0.0.1'  # The server's hostname or IP address
-PORT = 7000        # The port used by the server
+PORT = 7000    The port used by the server
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
@@ -21,7 +21,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         print(" ... caught keyboard interrupt, exiting")
     
     #finally:
-    #    s.close()
-    # not needed, with will take care of closign the socket
+   s.close()
+not needed, with will take care of closign the socket
         
 
