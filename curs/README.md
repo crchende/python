@@ -4,14 +4,17 @@
 # Cuprins
 
 1. [Tipuri de date fundamentale, functii, tratare erori.](tipuri-de-date-fundamentale-functii-tratare-erori)
-  1. [Tipuri de date fundamentale](#tipuri-de-date-fundamentale)
-  1. [Instructiuni de control](#instructiuni-de-control)
-  1. [Functii](#functii)
-  1. [Tratare erori](tratare-erori) 
+    1. [Tipuri de date fundamentale](#tipuri-de-date-fundamentale)
+    1. [Instructiuni de control](#instructiuni-de-control)
+    1. [Functii](#functii)
+    1. [Tratare erori](tratare-erori)
+1. Lucru cu fisiere
+1. Serializarea datelor
 
 # Tipuri de date fundamentale, functii, tratare erori.
+[cuprins](#cuprins)
 
-  ## Tipuri de date fundamentale
+## Tipuri de date fundamentale
 Python pune la dispozitie mai multe tipuri de date cum ar fi:
 
   - **date numerice**: intregi (`int`), reale (`float`)
@@ -41,7 +44,8 @@ Python pune la dispozitie mai multe tipuri de date cum ar fi:
       >          'cheie3': [1, 2, 3],
       >      }
 
-  ## Instructiuni de control
+## Instructiuni de control
+[cuprins](#cuprins)
 
   `if ... elif ... else`,
   
@@ -49,7 +53,8 @@ Python pune la dispozitie mai multe tipuri de date cum ar fi:
   
   `while`
 
-  ## Functii
+## Functii
+[cuprins](#cuprins)
 
 Functia este o constructie care permite sa dam nume unui bloc de cod. De fiecare date cand este nevoie sa executam acel bloc de cod, in loc sa-l rescriem in program unde avem nevoie de el, apelam functia care contine acel bloc de cod. In Pyton, o functie este un obiect. Sintaxa folosita pentru a defini o functie incepe cu linia:  `def numele_functie(parametrii):`, urmata de corpul functiei pe urmatoarele linii. Liniile care definesc blocul de cod care reprezinta corpul functieie, trebuie indentate. Se considera ca functia s-a incheiat cand indentarea revine la nivelul primei linii - care cuprinde `def`, `nume functie`, `parametrii`.
 
@@ -65,7 +70,8 @@ Functia este o constructie care permite sa dam nume unui bloc de cod. De fiecare
       > argumente: 4, 3  # rezultat apel
 
 
-## 1.1 Tratare erori
+## Tratare erori
+[cuprins](#cuprins)
 
 Uneori ne putem astepta ca un anuem apel sa genereze eroare si sa intrerupa functionarea programului. Este recomandat ca in astfel de cazuri sa folosim mecanismul de tratare a erorilor din Python, ca capturam eroarea si sa generam un mesaj de eroare care sa-l ajute pe utilizator sa inteleaga ca nu a folosit corect programul. Tratarea erorilor in Python se face cu ajutorul constructiei `try: ... except ... :` :
     > try:
@@ -97,6 +103,7 @@ In loc sa primeasca un mesaj de eroare automat, generat de python, se primeste u
 
 
 # 2. Lucru cu fisiere
+[cuprins](#cuprins)
 
 Programele, in timpul executiei (un proces este un program aflat in executie) folosesc memoria pentru a incarca datele de care au nevoie pentru a le procesa.
 Daca dorim sa pastram aceste informatii este necesar sa le salvam pe hard-disc, in fisiere. Daca dorim sa utilizam informatii existente pe hard-disc, trebuie sa putem citi fisiere.
@@ -115,7 +122,9 @@ Python pune la dispozitie functii prin intermediul carora se pot inchide / desch
     > f.close()                         # inchidere fisier
     
 
-# 3. Reprezentarea datelor in mod TEXT cu CSV, JSON, YAML
+# 3. Serializarea datelor
+
+si reprezentarea datelor in mod TEXT cu `CSV`, `JSON`, `YAML`
 
 Serializare datelor - transformarea datelor intr-un sir de octeti care poate fi scris intr-un fisier si care apoi poate fi preluat din fisier si transformat folosit pentru crea datele in memorie.
 Modulul 'pickle' din python pune la dispozitie metode de serializare - in forma `binara`.
