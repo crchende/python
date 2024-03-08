@@ -252,7 +252,7 @@ Exemplu:
 
 
 `[sursa: linkedin]`
-
+![linkedin_tipuri_date](https://github.com/crchende/python/assets/57460107/d3f6dbdc-3ddb-4d54-8684-4d7f310cb9ac)
 ![image](https://github.com/crchende/personal/assets/57460107/33ff569c-43a3-440f-b219-fcc0036af67a)
 
 `[sursa: linkedin]`
