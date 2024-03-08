@@ -278,10 +278,9 @@ Exemplu:
 
 `[sursa: linkedin]`
 
-![linkedin25_algoritmi](https://github.com/crchende/python/assets/57460107/8df73c95-5558-4767-8473-b76663c44f7c)
+![linkedin25_algoritmi](https://github.com/crchende/python/assets/57460107/86b929a8-f5dd-4f9e-b03e-ade6f87b2fb2)
 
 
 `[sursa: linkedin]`
 
-![image](https://github.com/crchende/personal/assets/57460107/a9bfa6b4-d6be-4f68-982f-31a0cd5f4163)
-
+![linkedin_python_roadmap_for_success](https://github.com/crchende/python/assets/57460107/d058e098-aa88-400d-9c86-25ff0ba46230)
