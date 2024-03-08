@@ -258,12 +258,12 @@ Exemplu:
 
 `[sursa: linkedin]`
 
-![linkedin_structuri_date1](https://github.com/crchende/python/assets/57460107/23d4b347-6544-47a8-91e8-a565f3c805f4)
+![linkedin_structuri_date2](https://github.com/crchende/python/assets/57460107/ad920dec-3ce5-43ad-b449-02ced8c3e6f1)
 
 
 `[sursa: linkedin]`
 
-![linkedin_structuri_date2](https://github.com/crchende/python/assets/57460107/ad920dec-3ce5-43ad-b449-02ced8c3e6f1)
+![linkedin_structuri_date1](https://github.com/crchende/python/assets/57460107/23d4b347-6544-47a8-91e8-a565f3c805f4)
 
 
 `[sursa: linkedin]`
