@@ -252,32 +252,33 @@ Exemplu:
 
 
 `[sursa: linkedin]`
+
 ![linkedin_tipuri_date](https://github.com/crchende/python/assets/57460107/d3f6dbdc-3ddb-4d54-8684-4d7f310cb9ac)
-![image](https://github.com/crchende/personal/assets/57460107/33ff569c-43a3-440f-b219-fcc0036af67a)
-
-`[sursa: linkedin]`
-
-![image](https://github.com/crchende/personal/assets/57460107/3feec423-fe9d-4fa9-8977-db54485b7554)
 
 
 `[sursa: linkedin]`
 
-![image](https://github.com/crchende/personal/assets/57460107/229d8bda-b934-43eb-bc24-f8c4f1295ab4)
+![linkedin_structuri_date1](https://github.com/crchende/python/assets/57460107/23d4b347-6544-47a8-91e8-a565f3c805f4)
 
 
 `[sursa: linkedin]`
 
-![image](https://github.com/crchende/personal/assets/57460107/4ceab77c-84f1-47f2-a935-12aa1f545fe3)
+![linkedin_structuri_date2](https://github.com/crchende/python/assets/57460107/ad920dec-3ce5-43ad-b449-02ced8c3e6f1)
 
 
 `[sursa: linkedin]`
 
-![image](https://github.com/crchende/personal/assets/57460107/73c0c083-166b-4a33-9030-30178a93c26c)
+![linkedin_python_cheat_sheet](https://github.com/crchende/python/assets/57460107/d4b0fbcb-b117-4394-bb60-cf9e9e01ab95)
 
 
 `[sursa: linkedin]`
 
-![image](https://github.com/crchende/personal/assets/57460107/899809bb-0e31-455d-b68c-2a7c03ffd728)
+![linkedin_mindmap_learn_py](https://github.com/crchende/python/assets/57460107/bdb5953e-97e6-46a3-b676-085532101d02)
+
+
+`[sursa: linkedin]`
+
+![linkedin25_algoritmi](https://github.com/crchende/python/assets/57460107/8df73c95-5558-4767-8473-b76663c44f7c)
 
 
 `[sursa: linkedin]`
