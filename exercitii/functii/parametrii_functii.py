@@ -1,6 +1,38 @@
-import sys; #for error handling - the errors for which we do not know the error type 
-
 '''
+Definire functii. Parametrii, argumente, parametrii formali, impliciti.
+Numar variabil de argumente, argumente date ca pereche cheie=valoare.
+Documentare modul si functie - textul ajutator - afisat cu comanda help.
+
+docstring / mesaj ajutator incorporat in modul (fisierul python) si in functii
+
+Textul de la inceputul modulului (fisierului) este text-ul de 'help'.
+ - help(nume_modul) 
+Textul de la inceputul fiecarei functii este textul ajutator. Se acceseaza cu:
+ - help(nume_modul.nume_functie) sau help(nume_functie)
+in functie de cum a fost importata functia.
+
+Acest text poate fi accesat si prin atributul: __doc__ al functiei / modulului.
+ - print(nume_functie.__doc__)
+
+Alte atribute implicite pentru modul / functie:
+ - __dir__  - afiseaza componentele modulului / functiei
+ - __dict__ - tbd
+ etc.
+
+Vizualizare detalii despre modul / functii in consola:
+
+CD in directorul cu fisierul sursa. Porniti interpretorul din consola:
+ - python sau python3
+ - import fisier_sursa (acesta este modulul python importat)
+ - help(fisier_sursa) - va afisa docstring-ul modulului si ale claselor /
+                        functiilor din modul
+ - help(fisier_sursa.nume_functie) - va afisa docstring-ul / textul ajutator
+                        al functiei
+ - dir(nume_fisier)   - va afisa toate componentele modulului - variabile, 
+                        functii, variabile/atribute implicite care au forma:
+                        __<nume>__
+ 
+
 parametrii / argumente
 
 Cand declaram functia avem parametrii: ex: def func1(x) x este parametru
@@ -9,6 +41,8 @@ Se mai numeste si parametru formal.
 Cand apelam functia, valorile pe care le dam parametrilor se numesc argumente:
 func1(1) - 1 este argument.
 '''
+
+import sys; #for error handling - the errors for which we do not know the error type 
 
 def func_fara_param():
     print("1) Executie functii fara parametrii")
