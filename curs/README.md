@@ -81,7 +81,7 @@ Functia este o constructie care permite sa dam nume unui bloc de cod. De fiecare
 ## Tratare erori
 [cuprins](#cuprins)
 
-Uneori ne putem astepta ca un anuem apel sa genereze eroare si sa intrerupa functionarea programului. Este recomandat ca in astfel de cazuri sa folosim mecanismul de tratare a erorilor din Python, ca capturam eroarea si sa generam un mesaj de eroare care sa-l ajute pe utilizator sa inteleaga ca nu a folosit corect programul. Tratarea erorilor in Python se face cu ajutorul constructiei `try: ... except ... :` :
+Uneori ne putem astepta ca un apel sa genereze eroare si sa intrerupa functionarea programului. Este recomandat ca in astfel de cazuri sa folosim mecanismul de tratare a erorilor din Python, sa capturam eroarea si sa generam un mesaj de eroare care sa-l ajute pe utilizator sa inteleaga ce s-a intamplat. Tratarea erorilor in Python se face cu ajutorul constructiei `try: ... except ... :` :
     > try:
     >    <cod care poate genera eroare>
     > except Exception as e:
